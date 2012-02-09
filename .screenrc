@@ -1,0 +1,20 @@
+# utf8
+defutf8 on
+
+# hate bells
+vbell off
+
+# and startup messages
+startup_message off
+
+# but like large scrollbacks
+scrollback 10000
+
+# misc
+autodetach on
+nethack on
+crlf off
+multiuser off
+msgwait 0
+msgminwait 1
+

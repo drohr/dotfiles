@@ -1,0 +1,6 @@
+set input-meta on
+set output-meta on
+set convert-meta off
+set meta-flag on
+# bells, no thanks
+set bell-style none

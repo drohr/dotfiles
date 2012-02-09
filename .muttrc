@@ -1,0 +1,36 @@
+# headers
+source ~/.mutt/headers
+
+# folders
+source ~/.mutt/folders
+
+# ignores
+source ~/.mutt/ignores
+
+# general settings
+source ~/.mutt/settings
+
+# formats
+source ~/.mutt/formats
+
+# aliases
+set alias_file=~/.mutt/aliases
+source ~/.mutt/aliases
+
+# macros
+source ~/.mutt/macros
+
+# scoring
+source ~/.mutt/scoring
+
+# colours
+source ~/.mutt/colours
+
+# keybindings
+source ~/.mutt/keybindings
+
+# hooks
+source ~/.mutt/hooks
+
+# gnupg
+source ~/.mutt/gnupg
