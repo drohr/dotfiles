@@ -14,9 +14,6 @@ export HISTCONTROL="erasedups"
 shopt -s histappend
 
 ## aliases
-alias ls="ls --color -Fs"
-alias ll="ls --color -l"
-alias l="ls --color -lA"
 alias rm="rm -v"
 alias c="clear"
 alias up="uptime"
@@ -27,6 +24,15 @@ alias last5="last -5"
 alias last10="last -10"
 alias lsd="ls -ld `find . -type d`"
 alias cd..="cd .."
+
+# ls stuff
+if ls -F --color=auto >&/dev/null; then
+    alias ls="ls --color=auto -Fs"
+else
+    alias ls="ls -G -Fs"
+fi
+alias ll="ls -l"
+alias l="ls -lA"
 
 if [ "$UID" = "0" ]; then
     alias rm='rm -i'
