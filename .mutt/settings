@@ -1,0 +1,36 @@
+set pager_index_lines=15        # use this for a split screen
+set signature="/usr/bin/fortune perl|"
+set sort=threads        # sort in threaded mode
+set nosave_name
+set allow_8bit
+set charset="utf-8"
+set config_charset="utf-8"
+set nomove
+set ascii_chars
+set status_on_top
+set reverse_name
+set quote_regexp="^([ \t]*[|>:%}#])+"
+set editor='vim + -c "set textwidth=72" -c "set wrap" -c "set nocp" -c "?^$"'
+set envelope_from
+set mbox_type="Maildir"
+set query_command="lbdbq '%s'"  # Requires lbdb: http://www.spinnaker.de/lbdb
+set abort_unmodified="no"
+set abort_nosubject="no"
+set edit_headers
+set pager_stop
+set quit=ask-yes
+set sendmail_wait="-1"  # send mail in the background
+set hidden_host
+set timeout=30
+hdr_order Date: From: Reply-To: To: Cc: Subject:
+
+unset use_from
+unset beep
+unset confirmappend
+unset bounce_delivered
+
+auto_view text/x-vcard
+auto_view text/html
+auto_view application/msword
+
+alternative_order text/plain text/enriched text/html

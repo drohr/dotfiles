@@ -1,0 +1,3 @@
+text/x-vcard;   ~/.mutt/mutt.vcard.filter; copiousoutput
+text/html;  /usr/bin/lynx -dump -force_html %s; copiousoutput; nametemplate=%s.html
+application/msword; catdoc %s; copiousoutput

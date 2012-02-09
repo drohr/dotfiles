@@ -1,0 +1,20 @@
+macro index l "g?\t" "folder list" # Shows folder list
+macro pager l "g?\t" "folder list" # Shows folder list
+macro browser c "qm" "compose mail" # To compse new mail from the browser
+macro pager S "| /usr/bin/sa-learn --spam -\n"
+macro pager P "!gpg --keyserver wwwkeys.us.pgp.net --recv-key 0x" "Get PGP Key"
+macro pager L "!gpg --lsign-key 0x" "Sign PGP Key"
+
+macro index \ee ":source ~/.muttrc\n" "\"ESC e\" reloads the muttrc"
+macro pager \ee ":source ~/.muttrc\n" "\"ESC e\" reloads the muttrc"
+macro index <F5> ":source ~/.muttrc\n" "Reload the muttrc"
+macro pager <F5> ":source ~/.muttrc\n" "Reload the muttrc"
+
+macro index \cx "!fetchmail\n" "Check for new mail via fetchmail"
+macro pager \cx "!fetchmail\n" "Check for new mail via fetchmail"
+
+# From http://www.spinnaker.de/mutt/keybind
+macro index \ea "!$EDITOR ~/.mutt/aliases\n:source ~/.mutt/aliases\n" "edit aliases file and reload it"
+macro pager \ea "!$EDITOR ~/.mutt/aliases\n:source ~/.mutt/aliases\n" "edit aliases file and reload it"
+
+macro pager d <exit><delete-message>

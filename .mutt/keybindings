@@ -1,0 +1,38 @@
+bind index p previous-undeleted
+bind index n next-undeleted
+bind index <up> previous-entry
+bind index <down> next-entry
+bind index - previous-page
+bind index ' ' next-page
+bind index v display-message   
+bind index c mail
+bind index g change-folder
+bind index G group-reply
+bind index w search
+bind index y print-message
+bind index x sync-mailbox
+bind index $ sort-mailbox  
+bind index a tag-prefix
+bind index \; tag-entry
+
+bind pager p previous-undeleted
+bind pager n next-undeleted
+bind pager <up> previous-line
+bind pager <down> next-line
+bind pager - previous-page
+bind pager ' ' next-page  
+bind pager g change-folder
+bind pager c mail
+bind pager w search
+bind pager y print-message 
+bind pager \n noop
+
+bind compose <return> send-message
+
+bind browser d change-dir
+
+bind index \` next-unread
+bind pager \` next-unread
+
+bind index P collapse-all
+bind index \cp collapse-thread
